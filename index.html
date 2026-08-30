@@ -220,7 +220,7 @@
                 <p class="text-lg font-semibold mb-4">€34.99</p>
                 <button
                   id="add-btn-1"
-                  onclick="addToCart(1, 'UV Protective Bags with Pump', 24.99, 'Foto3.jpg')"
+                  onclick="addToCart(1, 'UV Protective Bags with Pump', 34.99, 'Foto3.jpg')"
                   class="w-full bg-black text-white py-3 px-4 uppercase text-sm tracking-wider hover:bg-gray-800 transition flex justify-center items-center h-12"
                 >
                   Add to Cart
@@ -260,7 +260,7 @@
                 <p class="text-lg font-semibold mb-4">€29.99</p>
                 <button
                   id="add-btn-2"
-                  onclick="addToCart(2, 'Clear Bags with Pump', 29.99, 'product-image-Clear Bags with Pump.png')"
+                  onclick="addToCart(2, 'Clear Bags with Pump', 29.99, 'Foto2.jpg')"
                   class="w-full bg-black text-white py-3 px-4 uppercase text-sm tracking-wider hover:bg-gray-800 transition flex justify-center items-center h-12"
                 >
                   Add to Cart
@@ -297,7 +297,7 @@
                 <p class="text-lg font-semibold mb-4">€15.99</p>
                 <button
                   id="add-btn-3"
-                  onclick="addToCart(3, 'Pump', 15.99, 'product-image-pump.png')"
+                  onclick="addToCart(3, 'Pump', 15.99, 'Foto1.jpg')"
                   class="w-full bg-black text-white py-3 px-4 uppercase text-sm tracking-wider hover:bg-gray-800 transition flex justify-center items-center h-12"
                 >
                   Add to Cart
@@ -642,7 +642,7 @@
               <div class="border-t pt-4 space-y-3">
                 <div class="flex justify-between text-gray-600">
                   <span>Subtotal</span>
-                  <span id="checkout-subtotal">$0.00</span>
+                  <span id="checkout-subtotal">€0.00</span>
                 </div>
                 <div class="flex justify-between text-gray-600">
                   <span>Shipping</span>
@@ -652,7 +652,7 @@
                   class="flex justify-between text-xl font-bold text-black pt-4 border-t mt-4"
                 >
                   <span>Total</span>
-                  <span id="checkout-total">$0.00</span>
+                  <span id="checkout-total">€0.00</span>
                 </div>
               </div>
 
@@ -730,7 +730,7 @@
       <div class="p-6 border-t bg-gray-50">
         <div class="flex justify-between items-center mb-6">
           <span class="text-gray-600 font-medium">Subtotal:</span>
-          <span id="cart-total" class="text-2xl font-bold">$0.00</span>
+          <span id="cart-total" class="text-2xl font-bold">€0.00</span>
         </div>
         <button
           onclick="goToCheckout()"
@@ -828,7 +828,7 @@
         document.getElementById("cart-count").innerText = totalItems;
 
         const totalAmount = calculateTotal().toFixed(2);
-        document.getElementById("cart-total").innerText = "$" + totalAmount;
+        document.getElementById("cart-total").innerText = "€" + totalAmount;
 
         const cartItemsContainer = document.getElementById("cart-items");
         cartItemsContainer.innerHTML = "";
@@ -850,7 +850,7 @@
                                 <h4 class="font-serif font-semibold text-sm mb-1">${
                                   item.name
                                 }</h4>
-                                <p class="text-gray-500 text-sm mb-2">$${item.price.toFixed(
+                                <p class="text-gray-500 text-sm mb-2">€${item.price.toFixed(
                                   2
                                 )}</p>
                                 <div class="flex items-center gap-3 bg-gray-100 w-max rounded px-2 py-1">
